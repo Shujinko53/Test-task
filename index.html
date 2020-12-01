@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test task</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="indicator">
+        <h2 class="visually-hidden">Диаграмма лояльности</h2>
+        <div class="canvas">
+            <svg class="chart" width="270" height="270" viewBox="0 0 39 39">
+                <circle class="unit" r="15.9" cx="55%" cy="55%"></circle>
+                <circle class="unit" r="15.9" cx="55%" cy="55%"></circle>
+                <circle class="unit" r="15.9" cx="55%" cy="55%"></circle>
+            </svg>
+        </div>
+        <div class="diagram">
+            <div class="diagram_percent">
+                <p class="diagram_percent-number">72.</p>
+                <div class="diagram_percent-block">
+                    <p>%</p>
+                    <p>7</p>
+                </div>
+            </div>
+            <p class="diagram_name">Лояльность</p>
+            <p class="diagram_parameter">ниже среднего</p>
+            <p class="diagram_description">по отрасли: FMCG <br> значений слева от медианы <br> 52.0% - 83.1%</p>
+            <span class="diagram_number">3.1</span>
+        </div>
+        <div class="categories">
+            <ul class="categories-list">
+                <li class="category">
+                    <h3 class="category_title">Промоутеры</h3>
+                    <div class="category-data">
+                        <div class="category-data_block">
+                            <p class="category-data_percent">32.0%</p>
+                            <p class="category-number">81</p>
+                        </div>
+                        <div class="category-data_scale">
+                            <input class="scale" type="text" placeholder="+1.2%" readonly>
+                        </div>
+                        
+                    </div>
+                </li>
+                <li class="category">
+                    <h3 class="category_title">Скептики</h3>
+                    <div class="category-data">
+                        <div class="category-data_block">
+                            <p class="category-data_percent">39.1%</p>
+                            <p class="category-number">8</p>
+                        </div>
+                        <div class="category-data_scale-2">
+                            <input class="scale" type="text" placeholder="+4.8%" readonly>
+                        </div>
+                    </div>
+                </li>
+                <li class="category">
+                    <h3 class="category_title">Критики</h3>
+                    <div class="category-data">
+                        <div class="category-data_block">
+                            <p class="category-data_percent">79.8%</p>
+                            <p class="category-number">7</p>
+                        </div>
+                        <div class="category-data_scale-3">
+                            <input class="scale" type="text" placeholder="-9.7%" readonly>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
