@@ -287,10 +287,7 @@ a {
 .category-data_scale-2,
 .category-data_scale-3 {
     position: relative; 
-
-    
 }
-
 
 .category-data_scale::before,
 .category-data_scale-2::before,
@@ -308,19 +305,7 @@ a {
     border-top-left-radius: 4px;
 
     animation-name: animation;
-    transition-duration: 2s;
-    animation-duration: 2s; 
-}
-
-.category-data_scale:hover::before,
-.category-data_scale-2:hover::before,
-.category-data_scale-3:hover::before,
-.category-data_scale:hover::after,
-.category-data_scale-2:hover::after,
-.category-data_scale-3:hover::after {
-    width: 0;
-
-    cursor: pointer;
+    animation-duration: 2s;
 }
 
 .category-data_scale::after,
@@ -341,8 +326,7 @@ a {
     opacity: 0.5;
 
     animation-name: animation;
-    animation-duration: 2s; 
-    transition-duration: 2s;
+    animation-duration: 2s;
 }
 
 .category-data_scale::before,
