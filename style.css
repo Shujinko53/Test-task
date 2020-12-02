@@ -1,9 +1,15 @@
+@font-face {
+    font-weight: normal;
+    font-family: "GothamPro";
+    font-style: normal;
+    src: url("./fonts/GothamProRegular.woff") format("woff");
+}
+
 @keyframes render {
     0% {
       stroke-dasharray: 0 100;
     }
 }
-
 
 
 *,
@@ -14,7 +20,7 @@
 
 html {
     box-sizing: border-box;
-    font-family: "Gotham", "Arial", sans-serif;
+    font-family: "Arial", sans-serif;
     color: #555555;
 }
 
@@ -52,10 +58,25 @@ a {
 
     width: 309px;
     margin: 0 auto;
-    padding: 80px 32px 23px 49px;
+    padding: 78px 32px 23px 49px;
 
     border: 1px solid #000000;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.indicator::before {
+    content: "";
+
+    position: absolute;
+    top: 30%;
+    left: 14px;
+
+    width: 32px;
+    height: 239px;
+
+    background-image: url(./img/method-draw-image.svg);
+
+    transform: translateY(3px);
 }
 
 .indicator::after {
@@ -78,7 +99,6 @@ a {
 /* ---------- Первый блок ----------*/
 
 .diagram {
-
     width: 225px;
     margin-bottom: 83px;
 
@@ -90,6 +110,7 @@ a {
     justify-content: center;
     align-items: flex-start;
 
+    font-family: "GothamPro";
     color: #555555;
 }
 
@@ -97,8 +118,10 @@ a {
     margin: 0;
 
     font-weight: 500;
-    font-size: 44px;
+    font-size: 46px;
     line-height: normal;
+
+    transform: translateX(3px);
 }
 
 .diagram_percent-block {
@@ -109,21 +132,20 @@ a {
 .diagram_percent-block p {
     margin: 0;
 
-    font-size: 18px;
     line-height: normal;
 }
 
 .diagram_percent-block p:first-child {
-    margin: 0;
-
-    font-size: 14px;
+    font-size: 18px;
     line-height: normal;
 
     opacity: 0.5;
+
+    transform: translate(3px, 3px);
 }
 
 .diagram_percent-block p:last-child {
-    font-size: 26px;
+    font-size: 25px;
 }
 
 .diagram_name {
@@ -137,6 +159,7 @@ a {
 
 .diagram_parameter {
     margin: 0;
+    margin-bottom: 1px;
 
     font-weight: 600;
     font-size: 16px;
@@ -328,7 +351,7 @@ a {
 
 .category-data_scale-3::after {
     width: 31px;
-    height: 7px;
+    height: 8px;
 }
 
 .scale {
